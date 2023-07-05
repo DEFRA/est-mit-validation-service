@@ -1,5 +1,5 @@
 {{- if .Values.pr }}
-{{- include "ffc-helm-library.role-binding" (list . "est-mit-payment.role-binding") -}}
+{{- include "ffc-helm-library.role-binding" (list . "est-mit-validation-service.role-binding") -}}
 {{- end }}
-{{- define "est-mit-payment.role-binding" -}}
+{{- define "est-mit-validation-service.role-binding" -}}
 {{- end -}}

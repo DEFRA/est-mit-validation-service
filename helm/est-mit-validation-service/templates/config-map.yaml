@@ -1,5 +1,5 @@
-{{- include "ffc-helm-library.container-config-map" (list . "est-mit-payment.config-map") -}}
-{{- define "est-mit-payment.config-map" -}}
+{{- include "ffc-helm-library.container-config-map" (list . "est-mit-validation-service.config-map") -}}
+{{- define "est-mit-validation-service.config-map" -}}
 data:
   COMPlus_EnableDiagnostics: {{ .Values.container.comPlusEnableDiagnostics | quote }}
   PORT: {{ .Values.container.port | quote }}

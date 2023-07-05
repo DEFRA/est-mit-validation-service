@@ -1,3 +1,3 @@
-{{- include "ffc-helm-library.cluster-ip-service" (list . "est-mit-payment.cluster-ip-service") -}}
-{{- define "est-mit-payment.cluster-ip-service" -}}
+{{- include "ffc-helm-library.cluster-ip-service" (list . "est-mit-validation-service.cluster-ip-service") -}}
+{{- define "est-mit-validation-service.cluster-ip-service" -}}
 {{- end -}}

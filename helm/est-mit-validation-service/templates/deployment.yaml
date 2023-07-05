@@ -1,10 +1,10 @@
-{{- include "ffc-helm-library.deployment" (list . "est-mit-payment.deployment") -}}
-{{- define "est-mit-payment.deployment" -}}
+{{- include "ffc-helm-library.deployment" (list . "est-mit-validation-service.deployment") -}}
+{{- define "est-mit-validation-service.deployment" -}}
 spec:
   template:
     spec:
       containers:
-      - {{ include "ffc-helm-library.container" (list . "est-mit-payment.container") }}
+      - {{ include "ffc-helm-library.container" (list . "est-mit-validation-service.container") }}
       volumes:
       - name: {{ .Values.volumeMounts.name }}
         emptyDir: {}
