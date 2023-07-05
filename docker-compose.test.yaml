@@ -6,6 +6,6 @@ services:
       target: development
     image: est-mit-validation-service
     container_name: est-mit-valiation-service-test
-    entrypoint: dotnet test ./EST.MIT.ValidationService.Test/EST.MIT.ValidationService.Test.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput='./test-output/'
+    entrypoint: dotnet test ./EST.MIT.ValidationService.Test/EST.MIT.ValidationService.Api.Test.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput='./test-output/'
     volumes:
       - ./test-output:/home/dotnet/EST.MIT.ValidationService.Test/test-output
