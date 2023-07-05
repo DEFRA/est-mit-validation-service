@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  est-mit-validation-service:
+    build:
+      target: development
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./EST.MIT.ValidationService.Api:/home/dotnet/EST.MIT.ValidationService.Api
+      - ./EST.MIT.ValidationService.Test:/home/dotnet/EST.MIT.ValidationService.Test

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  est-mit-validation-service:
+    build:
+      context: .
+      target: production
+    image: est-mit-validation-service
+    container_name: est-mit-validation-service
+    environment:
+      COMPlus_EnableDiagnostics: 0

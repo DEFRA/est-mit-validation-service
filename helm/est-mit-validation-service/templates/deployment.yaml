@@ -1,0 +1,11 @@
+{{- include "ffc-helm-library.deployment" (list . "est-mit-payment.deployment") -}}
+{{- define "est-mit-payment.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "ffc-helm-library.container" (list . "est-mit-payment.container") }}
+      volumes:
+      - name: {{ .Values.volumeMounts.name }}
+        emptyDir: {}
+{{- end -}}

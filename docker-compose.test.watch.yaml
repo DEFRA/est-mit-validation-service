@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  est-mit-validation-service:
+    build:
+      target: development
+    container_name: est-mit-validation-service
+    entrypoint: dotnet watch --project ./EST.MIT.ValidationService.Test test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput='./test-output/'

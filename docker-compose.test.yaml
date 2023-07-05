@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  est-mit-validation-service:
+    build:
+      target: development
+    image: est-mit-validation-service
+    container_name: est-mit-valiation-service-test
+    entrypoint: dotnet test ./EST.MIT.ValidationService.Test/EST.MIT.ValidationService.Test.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput='./test-output/'
+    volumes:
+      - ./test-output:/home/dotnet/EST.MIT.ValidationService.Test/test-output

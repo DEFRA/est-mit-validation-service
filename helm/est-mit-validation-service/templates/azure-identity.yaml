@@ -1,0 +1,5 @@
+{{- if .Values.aadPodIdentity }}
+{{- include "ffc-helm-library.azure-identity" (list . "est-mit-payment.azure-identity") -}}
+{{- end }}
+{{- define "est-mit-payment.azure-identity" -}}
+{{- end -}}
