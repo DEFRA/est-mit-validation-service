@@ -5,7 +5,7 @@ workstream: ffc-rpa
 image: est-mit-validation-service
 
 labels: {}
-
+ 
 azureIdentity:
   resourceID: dummy
   clientID: dummy
