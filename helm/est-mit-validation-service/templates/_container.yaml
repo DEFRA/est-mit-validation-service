@@ -1,4 +1,4 @@
-{{- define "est-mit-payment.container" -}}
+{{- define "est-mit-validation-service.container" -}}
 ports:
 - containerPort: {{ .Values.container.port }}
 volumeMounts:
